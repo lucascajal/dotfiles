@@ -2,7 +2,7 @@ brew "neovim"
 brew "tmux"
 cask "font-jetbrains-mono-nerd-font"
 cask "alacritty"
-
+brew "starship"
 brew "lazygit"
 brew "fzf"
 brew "ripgrep"

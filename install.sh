@@ -23,6 +23,7 @@ fi
 backup ~/.tmux.conf
 backup ~/.config/nvim
 backup ~/.config/alacritty
+backup ~/.config/starship.toml
 
 # Ensure config dir exists
 mkdir -p ~/.config
@@ -31,5 +32,13 @@ mkdir -p ~/.config
 ln -sfn "$DOTFILES_DIR/tmux/tmux.conf" ~/.tmux.conf
 ln -sfn "$DOTFILES_DIR/nvim" ~/.config/nvim
 ln -sfn "$DOTFILES_DIR/alacritty" ~/.config/alacritty
+ln -sfn "$DOTFILES_DIR/starship/starship.toml" ~/.config/starship.toml
 
-echo "tmux + LazyVim installed"
+# Add starship init to ~/.zshrc if not present
+STARSHIP_LINE='eval "$(starship init zsh)"'
+if ! grep -Fxq "$STARSHIP_LINE" ~/.zshrc; then
+  echo "$STARSHIP_LINE" >> ~/.zshrc
+  source ~/.zshrc
+fi
+
+echo "alacritty + starship + tmux + LazyVim installed"
