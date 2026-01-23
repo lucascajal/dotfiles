@@ -1,6 +1,13 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+
+# # Uncomment to move prompt to right side and input right below on left
+# # example:
+# #                         ~/path/to/directory
+# # > echo "Hello, World"
+# #
 # add_newline = false
+# format = """$fill$all$character"""
 
 palette = "catppuccin_mocha"
 
