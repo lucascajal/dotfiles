@@ -1,7 +1,7 @@
 # See config options at https://alacritty.org/config-alacritty.html
 
 [window]
-padding = { x = 5, y = 5 }
+padding = { x = 5, y = 0 }
 opacity = 0.95
 blur = true
 decorations = "Full" # or "None"
