@@ -22,6 +22,7 @@ fi
 # Backup existing configs
 backup ~/.tmux.conf
 backup ~/.config/nvim
+backup ~/.config/alacritty
 
 # Ensure config dir exists
 mkdir -p ~/.config
@@ -29,11 +30,6 @@ mkdir -p ~/.config
 # Symlink full configs
 ln -sfn "$DOTFILES_DIR/tmux/tmux.conf" ~/.tmux.conf
 ln -sfn "$DOTFILES_DIR/nvim" ~/.config/nvim
-
-# Configure iTerm2
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_DIR/iterm2"
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+ln -sfn "$DOTFILES_DIR/alacritty" ~/.config/alacritty
 
 echo "tmux + LazyVim installed"

@@ -1,7 +1,7 @@
 brew "neovim"
 brew "tmux"
-cask "iterm2"
 cask "font-jetbrains-mono-nerd-font"
+cask "alacritty"
 
 brew "lazygit"
 brew "fzf"
