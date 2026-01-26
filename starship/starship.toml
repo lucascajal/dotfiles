@@ -40,13 +40,19 @@ mantle = "#181825"
 crust = "#11111b"
 
 [directory]
+style = "bg:surface0 fg:text"
+format = "[](surface0)[$path]($style)[](surface0) "
 read_only = " 󰌾"
 
 [git_branch]
+style = "maroon"
 symbol = " "
 
 [git_commit]
 tag_symbol = '  '
+
+[git_status]
+style = "#ca2828"
 
 [docker_context]
 symbol = " "
@@ -58,6 +64,7 @@ symbol = " "
 symbol = " "
 
 [package]
+disabled = true
 symbol = "󰏗 "
 
 [fossil_branch]
@@ -227,7 +234,8 @@ format = '[$symbol$stack]($style)pulumi'
 format = '[$symbol]($style)purescript'
 
 [python]
-format = '[$symbol]($style)python'
+# format = '[$symbol]($style)python'
+format = '[${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)python'
 symbol = ' '
 style = '#306998'
 
