@@ -71,7 +71,7 @@ symbol = "󰏗 "
 symbol = " "
 
 [bun]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 symbol = " "
 
 [buf]
@@ -79,80 +79,80 @@ format = "with [$symbol]($style)"
 symbol = " "
 
 [c]
-format = "via [$symbol($name)]($style)"
+format = "[$symbol($name)]($style) "
 symbol = " "
 
 [cmake]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 symbol = " "
 
 [cobol]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 
 [conda]
 symbol = " "
 
 [cpp]
-format = "via [$symbol($name)]($style)"
+format = "[$symbol($name)]($style) "
 symbol = " "
 
 [crystal]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 symbol = " "
 
 [daml]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 
 [dart]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 symbol = " "
 
 [deno]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 symbol = " "
 
 [dotnet]
-format = "[$symbol(🎯 $tfm )]($style)"
+format = "[$symbol(🎯 $tfm )]($style) "
 
 [elixir]
-format = '[$symbol]($style)elixir'
+format = '[$symbol]($style)elixir '
 symbol = " "
 
 [elm]
-format = '[$symbol]($style)elm'
+format = '[$symbol]($style)elm '
 symbol = " "
 
 [erlang]
-format = '[$symbol]($style)erlang'
+format = '[$symbol]($style)erlang '
 
 [fennel]
-format = '[$symbol]($style)fennel'
+format = '[$symbol]($style)fennel '
 symbol = " "
 
 [fortran]
-format = '[$symbol]($style)fortran'
+format = '[$symbol]($style)fortran '
 symbol = " "
 
 [gleam]
-format = '[$symbol]($style)gleam'
+format = '[$symbol]($style)gleam '
 
 [golang]
-format = '[$symbol]($style)golang'
+format = '[$symbol]($style)golang '
 symbol = " "
 
 [gradle]
-format = '[$symbol]($style)gradle'
+format = '[$symbol]($style)gradle '
 symbol = " "
 
 [guix_shell]
 symbol = " "
 
 [haskell]
-format = '[$symbol]($style)haskell'
+format = '[$symbol]($style)haskell '
 symbol = " "
 
 [haxe]
-format = '[$symbol]($style)haxe'
+format = '[$symbol]($style)haxe '
 symbol = " "
 
 [hg_branch]
@@ -162,131 +162,131 @@ symbol = " "
 ssh_symbol = " "
 
 [helm]
-format = '[$symbol]($style)helm'
+format = '[$symbol]($style)helm '
 symbol = " "
 
 [java]
-format = '[$symbol]($style)java'
+format = '[$symbol]($style)java '
 symbol = " "
 
 [julia]
-format = '[$symbol]($style)julia'
+format = '[$symbol]($style)julia '
 symbol = " "
 
 [kotlin]
-format = '[$symbol]($style)kotlin'
+format = '[$symbol]($style)kotlin '
 symbol = " "
 
 [lua]
-format = '[$symbol]($style)lua'
+format = '[$symbol]($style)lua '
 symbol = " "
 
 [memory_usage]
 symbol = "󰍛 "
 
 [meson]
-format = '[$symbol]($style)meson'
+format = '[$symbol]($style)meson '
 symbol = "󰔷 "
 
 [mojo]
 format = 'with [$symbol]($style)'
 
 [nim]
-format = '[$symbol]($style)nim'
+format = '[$symbol]($style)nim '
 symbol = "󰆥 "
 
 [nix_shell]
 symbol = " "
 
 [nodejs]
-format = '[$symbol]($style)nodejs'
+format = '[$symbol]($style)nodejs '
 symbol = " "
 
 [ocaml]
-format = '[$symbol(\($switch_indicator$switch_name\) )]($style)ocaml'
+format = '[$symbol(\($switch_indicator$switch_name\) )]($style)ocaml '
 symbol = " "
 
 [odin]
-format = '[$symbol]($style)odin'
+format = '[$symbol]($style)odin '
 
 [opa]
-format = '[$symbol]($style)opa'
+format = '[$symbol]($style)opa '
 
 [perl]
-format = '[$symbol]($style)perl'
+format = '[$symbol]($style)perl '
 symbol = " "
 
 [php]
-format = '[$symbol]($style)php'
+format = '[$symbol]($style)php '
 symbol = " "
 
 [pijul_channel]
 symbol = " "
 
 [pixi]
-format = '[$symbol($environment )]($style)pixi'
+format = '[$symbol($environment )]($style)pixi '
 symbol = "󰏗 "
 
 [pulumi]
-format = '[$symbol$stack]($style)pulumi'
+format = '[$symbol$stack]($style)pulumi '
 
 [purescript]
-format = '[$symbol]($style)purescript'
+format = '[$symbol]($style)purescript '
 
 [python]
-# format = '[$symbol]($style)python'
-format = '[${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)python'
+# format = '[$symbol]($style)python '
+format = '[${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)python '
 symbol = ' '
 style = '#306998'
 
 [quarto]
-format = '[$symbol]($style)quarto'
+format = '[$symbol]($style)quarto '
 
 [raku]
-format = '[$symbol]($style)raku'
+format = '[$symbol]($style)raku '
 
 [red]
-format = '[$symbol]($style)red'
+format = '[$symbol]($style)red '
 
 [rlang]
-format = '[$symbol]($style)rlang'
+format = '[$symbol]($style)rlang '
 symbol = "󰟔 "
 
 [ruby]
-format = '[$symbol]($style)ruby'
+format = '[$symbol]($style)ruby '
 symbol = " "
 
 [rust]
-format = '[$symbol]($style)rust'
+format = '[$symbol]($style)rust '
 symbol = "󱘗 "
 
 [scala]
-format = '[$symbol]($style)scala'
+format = '[$symbol]($style)scala '
 symbol = " "
 style = '#ff0000'
 
 [solidity]
-format = '[$symbol]($style)solidity'
+format = '[$symbol]($style)solidity '
 
 [swift]
-format = '[$symbol]($style)swift'
+format = '[$symbol]($style)swift '
 symbol = " "
 
 [typst]
-format = '[$symbol]($style)typst'
+format = '[$symbol]($style)typst '
 
 [vagrant]
-format = '[$symbol]($style)vagrant'
+format = '[$symbol]($style)vagrant '
 
 [vlang]
-format = '[$symbol]($style)vlang'
+format = '[$symbol]($style)vlang '
 
 [xmake]
-format = "via [$symbol]($style)"
+format = "[$symbol]($style) "
 symbol = " "
 
 [zig]
-format = '[$symbol]($style)zig'
+format = '[$symbol]($style)zig '
 symbol = " "
 
 [os.symbols]
