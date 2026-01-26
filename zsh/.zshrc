@@ -13,8 +13,8 @@ fi
 
 alias k='kubectl'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias fzfp="fzf --preview='cat {}'"
-alias nvimf='nvim "$(fzf --preview='\''cat {}'\'')"'
+alias fzfp="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
+alias nvimf='nvim "$(fzfp)"'
 
 # saml2aws
 alias awslogin="rm ~/.aws/credentials && saml2aws --disable-keychain --skip-prompt login"
