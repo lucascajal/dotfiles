@@ -13,16 +13,31 @@ fi
 
 alias k='kubectl'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias fzfp="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
-alias nvimf='nvim "$(fzfp)"'
 
 # saml2aws
 alias awslogin="rm ~/.aws/credentials && saml2aws --disable-keychain --skip-prompt login"
 
-# zsh-autocomplete & zsh-autosuggestions
-source $(brew --prefix)/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# FZF configuration
+## Search and open files with fzf and nvim (tmux view to distinguish from other fzf usages)
+alias nvimf='nvim "$(fzf --tmux 90%)"'
+## fzf shell integration
+export FZF_CTRL_T_OPTS="
+    --style full
+    --height ~90%
+    --preview 'bat -n --color=always {}'"
+export FZF_CTRL_R_OPTS="--no-preview"
+export FZF_ALT_C_OPTS="
+    --style full
+    --height ~90%
+    --no-preview"
+export FZF_DEFAULT_OPTS="
+    --walker-skip .git,node_modules,target,.pyc,__pycache__,.pytest_cache,.DS_Store,.terraform,.mypy_cache,.venv
+    --layout reverse
+    --preview 'bat -n --color=always {}'"
+source <(fzf --zsh)
+
+# Zsh inline autosuggestions and syntax highlighting
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 eval "$(starship init zsh)"
-
-source $(brew --prefix)/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
