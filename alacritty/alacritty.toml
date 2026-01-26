@@ -18,7 +18,7 @@ blink_interval = 550
 blink_timeout = 0
 
 [terminal]
-shell = { program = "/bin/zsh", args = ["-lc", "tmux attach || tmux new -s mysession"] }
+shell = { program = "/bin/zsh", args = ["-lc", "tmux attach || tmux new -s mysession -c ~/EDAA"] }
 
 # [[keyboard.bindings]]
 # key = "V"
