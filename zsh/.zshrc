@@ -24,7 +24,7 @@ alias nvimf='nvim "$(fzf --tmux 90%)"'
 export FZF_CTRL_T_OPTS="
     --style full
     --height ~90%
-    --preview 'bat -n --color=always {}'"
+    --preview 'if [ -d {} ]; then ls --color {} ; else bat -n --color=always {} ; fi'"
 export FZF_CTRL_R_OPTS="--no-preview"
 export FZF_ALT_C_OPTS="
     --style full
@@ -33,7 +33,7 @@ export FZF_ALT_C_OPTS="
 export FZF_DEFAULT_OPTS="
     --walker-skip .git,node_modules,target,.pyc,__pycache__,.pytest_cache,.DS_Store,.terraform,.mypy_cache,.venv
     --layout reverse
-    --preview 'bat -n --color=always {}'"
+    --preview 'if [ -d {} ]; then ls --color {} ; else bat -n --color=always {} ; fi'"
 source <(fzf --zsh)
 
 # Zsh inline autosuggestions and syntax highlighting
