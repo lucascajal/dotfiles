@@ -8,6 +8,7 @@
 # #
 # add_newline = false
 # format = """$fill$all$character"""
+format = """$all$fill$cmd_duration$line_break$character"""
 
 palette = "catppuccin_mocha"
 
@@ -38,6 +39,16 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+
+[fill]
+symbol = ' '
+
+[cmd_duration]
+min_time = 1_000
+show_milliseconds = true
+format = '[$duration]($style) '
+style = "subtext0"
+show_notifications = false # Set to true to enable OS notifications when long commands complete
 
 [directory]
 style = "bg:surface0 fg:text"
