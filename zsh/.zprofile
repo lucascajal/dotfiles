@@ -4,6 +4,10 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(/usr/local/bin/brew shellenv)"
 
+# Zurich SSL certificates
+export SSL_CERT_FILE="$HOME/EDAA/certs/certs.pem"
+export REQUESTS_CA_BUNDLE="$HOME/EDAA/certs/certs.pem"
+
 # PATH modifications (order matters - first = highest priority)
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
