@@ -15,8 +15,9 @@ setopt hist_ignore_dups      # Don't record an entry that duplicates the previou
 setopt hist_find_no_dups     # When searching history, skip duplicate entries
 
 # Key bindings
-bindkey '^[[A' history-beginning-search-backward
-bindkey '^[[B' history-beginning-search-forward
+bindkey -v                                          # Enable vi keybindings
+bindkey '^[[A' history-beginning-search-backward    # Up arrow for history search based on current input
+bindkey '^[[B' history-beginning-search-forward     # Down arrow for history search based on current input
 
 # Aliases
 alias e='echo "Press Enter to confirm exit, enter anything else to cancel..." && read -r key && [[ -z "$key" ]] && exit || echo "Exit cancelled"'
