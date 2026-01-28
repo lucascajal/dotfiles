@@ -19,6 +19,7 @@ bindkey '^[[A' history-beginning-search-backward
 bindkey '^[[B' history-beginning-search-forward
 
 # Aliases
+alias e='echo "Press Enter to confirm exit, enter anything else to cancel..." && read -r key && [[ -z "$key" ]] && exit || echo "Exit cancelled"'
 alias c='clear'
 alias k='kubectl'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
