@@ -26,6 +26,7 @@ alias k='kubectl'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias ls='ls --color'
 alias nvimf='nvim "$(fzf --tmux 90%)"' # open file in nvim via fzf (tmux mode to distinguish from terminal)
+alias lgit='lazygit'
 alias awslogin="rm ~/.aws/credentials && saml2aws --disable-keychain --skip-prompt login" # saml2aws
 
 # Zinit plugin manager installation
