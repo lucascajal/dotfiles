@@ -70,5 +70,8 @@ export FZF_DEFAULT_OPTS="
     --preview 'if [ -d {} ]; then ls --color {} ; else bat -n --color=always {} ; fi'"
 source <(fzf --zsh)
 
+# Enable zoxide with cd override
+eval "$(zoxide init --cmd cd zsh)"
+
 # Starship prompt (after all plugins)
 eval "$(starship init zsh)"
